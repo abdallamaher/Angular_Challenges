@@ -1,5 +1,5 @@
 {
-  "name": "kayak homework",
+  "name": "kayak_homework",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -54,6 +54,7 @@
     "karma-coverage-istanbul-reporter": "~2.0.1",
     "karma-jasmine": "~1.1.2",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "lite-server": "^2.6.1",
     "ngrx-store-freeze": "^0.2.4",
     "protractor": "~5.4.0",
     "sass": "^1.49.9",
