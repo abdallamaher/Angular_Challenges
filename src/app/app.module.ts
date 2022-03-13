@@ -1,7 +1,7 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { environment } from "../environments/environment";
+import { environment } from "../environments/environment.prod";
 import { HttpClientModule } from "@angular/common/http";
 import { HttpClientJsonpModule } from "@angular/common/http";
 // Modules
