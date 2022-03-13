@@ -1,0 +1,29 @@
+section {
+  h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #192024;
+  }
+  .wrapper .filterList {
+    display: inline-block;
+    margin-right: 10px;
+
+    .input {
+      float: left;
+      margin-right: 10px;
+      input {
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .label {
+      margin-right: 24px;
+      font-size: 14px;
+      font-weight: normal;
+      color: #192024;
+      float: right;
+      margin-top: 7px;
+    }
+  }
+}

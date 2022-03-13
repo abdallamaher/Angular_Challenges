@@ -1,0 +1,45 @@
+$color-overlay: rgba(32, 15, 9, 0.829);
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
+
+/* You can add global styles to this file, and also import other style files */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  outline: none;
+}
+
+html,
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .page__wrapper {
+    padding-top: 100px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .brand__color {
+    color: #ff6600;
+  }
+
+  .btn {
+    outline: none;
+    border: none;
+    background: white;
+    padding: 5px 10px;
+    user-select: none;
+    cursor: pointer;
+  }
+}
+

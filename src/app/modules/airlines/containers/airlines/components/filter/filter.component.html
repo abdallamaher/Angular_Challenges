@@ -1,0 +1,19 @@
+<section>
+  <h2>Filter by Alliances</h2>
+  <div class="wrapper">
+    <div *ngFor="let item of filterList; let i = index" class="filterList">
+      <div class="input">
+        <input
+          type="checkbox"
+          [name]="item.name"
+          [id]="item.filterId"
+          [value]="item.filterId"
+          (change)="onCheckboxChange(item.alliance)"
+        />
+      </div>
+      <div class="label">
+        <label>{{ item.name }}</label>
+      </div>
+    </div>
+  </div>
+</section>

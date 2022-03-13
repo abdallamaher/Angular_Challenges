@@ -1,0 +1,36 @@
+<section>
+  <div
+    infiniteScroll
+    [infiniteScrollDistance]="2"
+    [infiniteScrollThrottle]="50"
+    (scrolled)="onScroll()"
+    class="cards"
+  >
+    <ng-template ngFor [ngForOf]="cards" let-item let-i="index">
+      <div class="card-wrapper">
+        <div class="image">
+          <img
+            *ngIf="item?.fullLogUrl"
+            class="site__logo"
+            [src]="item.fullLogUrl"
+            alt="KAYAK-logo"
+          />
+        </div>
+        <div class="info">
+          <div class="info-wrapper">
+            <span class="name">{{ item?.name }}</span>
+            <div *ngIf="item?.alliance != 'none'" class="alliance">
+              <span>{{ allianceName[item?.alliance] }}</span>
+            </div>
+            <div *ngIf="item?.phone != ''" class="phone">
+              <span>{{ item?.phone }}</span>
+            </div>
+            <div *ngIf="item?.site != ''" class="site">
+              <span>{{ item?.site }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+</section>

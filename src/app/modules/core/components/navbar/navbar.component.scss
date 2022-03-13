@@ -1,0 +1,18 @@
+:host {
+  display: block;
+  background: #ffffff;
+  width: 100%;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    box-shadow: 1px -1px 2px 1px #9d9595;
+
+    .site__logo {
+      position: relative;
+      margin-top: 19px;
+      margin-bottom: 19px;
+    }
+  }
+}

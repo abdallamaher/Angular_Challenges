@@ -1,0 +1,80 @@
+.cards {
+  background: #f9fafb;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  padding: 20px 0;
+  margin-top: 36px;
+
+  .card-wrapper {
+    cursor: pointer;
+    min-height: 240px;
+    min-width: 300px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: solid 1px #ffffff;
+    box-shadow: 0 -1px 4px 0 rgb(25, 32, 36, 0.04),
+      0 3px 6px 0 rgba(25, 32, 36, 0.16);
+    display: grid;
+    grid-template-columns: 37% 63%;
+
+    .image {
+      margin: auto;
+      margin-right: 18px;
+      img {
+        width: 32px;
+        height: 32px;
+        object-fit: cover;
+        justify-content: center;
+      }
+    }
+
+    .info {
+      overflow-wrap: break-word;
+
+      .info-wrapper {
+        margin-top: 110px;
+        padding-right: 5px;
+
+        .name {
+          font-size: 16px;
+          font-weight: bold;
+          color: #192024;
+        }
+
+        .alliance,
+        .phone {
+          visibility: hidden;
+          font-size: 14px;
+          font-weight: normal;
+          color: #192024;
+          margin-top: 3px;
+        }
+
+        .site {
+          visibility: hidden;
+          font-size: 14px;
+          font-weight: normal;
+          color: #5a6872;
+          margin-top: 3px;
+        }
+      }
+    }
+    &:hover {
+      border: solid 1px #363f45;
+      .info .info-wrapper {
+        .alliance,
+        .phone,
+        .site {
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}

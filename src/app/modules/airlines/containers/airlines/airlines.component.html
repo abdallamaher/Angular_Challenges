@@ -1,0 +1,5 @@
+<section>
+  <h1>Airlines</h1>
+  <app-filter (ToggleCheckBox)="filter($event)"></app-filter>
+  <app-cards [cards]="airLinesList" (loadMore)="loadMore()"></app-cards>
+</section>
