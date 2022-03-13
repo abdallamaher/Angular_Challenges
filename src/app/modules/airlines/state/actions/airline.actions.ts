@@ -1,5 +1,5 @@
 import { Action } from "@ngrx/store";
-import { Airline } from "./../../models/Airline.model";
+import { Airline } from "./../../models/airline.model";
 
 export enum AirlineActionTypes {
   LoadAirlines = "[Airlines] Load Airlines",

@@ -2,7 +2,7 @@ import { Injectable, OnDestroy } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { ApiService } from "src/app/modules/core/services/api.service";
 import { Observable, of } from "rxjs";
-import { Airline } from "./../../models/Airline.model";
+import { Airline } from "./../../models/airline.model";
 import { catchError } from "rxjs/operators";
 
 @Injectable({

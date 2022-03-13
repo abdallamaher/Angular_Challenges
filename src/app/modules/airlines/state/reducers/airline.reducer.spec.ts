@@ -6,7 +6,7 @@ import {
   AirlinesError,
   AirlinesTest
 } from './../actions/airline.actions';
-import { Airline } from './../../models/Airline.model';
+import { Airline } from './../../models/airline.model';
 
 describe('Airlines Reducer', () => {
   describe('initial state', () => {

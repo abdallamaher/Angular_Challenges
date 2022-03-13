@@ -5,7 +5,7 @@ import { Observable, of } from "rxjs";
 import { Action } from "@ngrx/store";
 import { switchMap, map, catchError } from "rxjs/operators";
 import { AirlinesApiService } from "../services/airlines-api.service";
-import { Airline } from "./../../models/Airline.model";
+import { Airline } from "./../../models/airline.model";
 import { ApiService } from "src/app/modules/core/services/api.service";
 
 @Injectable()

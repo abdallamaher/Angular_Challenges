@@ -1,5 +1,5 @@
 import * as fromSelectors from './airlines.selector';
-import { Airline } from './../../models/Airline.model';
+import { Airline } from './../../models/airline.model';
 import { AirlinesState } from './../reducers/Airline.reducer';
 
 describe('Selectors', () => {
