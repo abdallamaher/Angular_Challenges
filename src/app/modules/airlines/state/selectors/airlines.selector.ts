@@ -2,7 +2,7 @@ import { FilterConfiguration } from './../../models/filterConfiguration.model';
 import { createFeatureSelector, createSelector } from "@ngrx/store";
 import {
   AirlinesState
-} from "./../reducers/Airline.reducer";
+} from "./../reducers/airline.reducer";
 import { Airline } from "./../../models/airline.model";
 
 const AirlinesState = createFeatureSelector<AirlinesState>("Airlines");
