@@ -1,12 +1,12 @@
+import { Airline } from './../../models/airline.model';
 import { Observable, Subscription } from 'rxjs';
 import { FilterConfiguration } from './../../models/filterConfiguration.model';
 import { Component, OnInit } from '@angular/core';
-import { select, Store } from '@ngrx/store';
-import { FilterItem } from '../../models/filterItem.model';
+import { Store } from '@ngrx/store';
 import * as AirlinesActions from "../../state/actions/airline.actions";
 import * as fromAirLinesState from '../../state/selectors/airlines.selector'
-import { parse } from 'querystring';
-import { Airline } from '../../models/Airline.model';
+
+
 @Component({
   selector: 'app-airlines',
   templateUrl: './airlines.component.html',

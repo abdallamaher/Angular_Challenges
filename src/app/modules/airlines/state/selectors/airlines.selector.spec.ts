@@ -1,6 +1,6 @@
 import * as fromSelectors from './airlines.selector';
-import { Airline } from '../../models/Airline.model';
-import { AirlinesState } from '../reducers/Airline.reducer';
+import { Airline } from './../../models/Airline.model';
+import { AirlinesState } from './../reducers/Airline.reducer';
 
 describe('Selectors', () => {
   it('should select the with the filterConfiguration', () => {

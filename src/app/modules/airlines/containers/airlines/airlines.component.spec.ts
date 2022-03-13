@@ -1,4 +1,3 @@
-import { OnDestroy } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { StoreModule, Store, combineReducers } from '@ngrx/store';
 import * as fromRootReducer from '../../../../ngrx-store/reducers/index';
@@ -6,7 +5,7 @@ import * as fromAirlineReducer from '../../state/reducers/airline.reducer';
 import * as DataActions from '../../state/actions/airline.actions';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { AirlinesComponent } from './airlines.component';
-import * as fromSelectors from '../../state/selectors/airlines.selector';
+
 
 describe('My Component', () => {
   let component: AirlinesComponent;

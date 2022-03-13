@@ -1,5 +1,5 @@
 import { EntityState, EntityAdapter, createEntityAdapter } from "@ngrx/entity";
-import { Airline } from "../../models/airline.model";
+import { Airline } from "./../../models/airline.model";
 import { AirlineActions, AirlineActionTypes } from "../actions/airline.actions";
 
 export interface AirlinesState {
